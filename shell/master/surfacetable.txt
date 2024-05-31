@@ -1,0 +1,61 @@
+charset,UTF-8
+version,1
+option,DisableNoDefineSurfaces
+group,TheHunter
+{
+	scope,0
+	
+	0,Idle
+	1,Happy
+	2,Sad
+	3,Angy
+	4,Confusion
+	5,LongLegs
+	6,LongLegs Sad
+}
+
+group,ThePup
+{
+	scope,1
+	
+	10,KIdle
+	200,Idle
+	201,Question
+	202,Take
+	203,Carry You
+	204,Predator
+	205,Five Pebbles
+	206,Yes
+	207,Give
+	208,Carry Me
+	209,Food
+	210,Moon
+	211,No
+	212,Follow
+	213,Out of Way
+	214,Shelter
+	215,Region Up
+	216,Region Right
+	217,Region Down
+	218,Region left
+	219,Attention
+	220,Stay
+	221,Me
+	222,Scav/Deer/Toll/Creature
+	223,Grab
+	224,Relax
+	225,Cycle
+	226,You
+	227,Spare/Peace
+	228,Kill
+	229,Later/Bugs/Slow
+	230,Nevermind
+	231,Object
+	232,LOSER >:] (or negative)
+	233,Yay! (or positive)
+	234,AFK (Tired/Nap?)
+	235,Which?
+	236,Rain
+	237,Karma
+	238,Fast
+}

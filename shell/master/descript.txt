@@ -1,0 +1,13 @@
+charset,UTF-8
+type,shell
+name,Hunter
+seriko.use_self_alpha, 1
+sakura.menu,auto
+sakura.bindgroup1.name,Items,Spear
+sakura.bindgroup2.name,Items,Tailpack
+
+sakura.bindoption1.group,Items,multiple
+
+menu.background.font.color.r,255
+menu.background.font.color.g,255
+menu.background.font.color.b,255

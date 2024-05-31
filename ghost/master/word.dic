@@ -1,0 +1,24 @@
+attemptget //why did i do it like this i coulda just- //better? //i meant the %{thing} thing but i realise that the %{thing} could be cleaner and i didn't delete the comment
+{
+	"You can't quite seem to get it, as you're too small and there's no poles around."
+	"You manage to reach the fruit! \1\s[233]\0You hop up and down joyfully. \w8\w8\w8\w8\1\s[231]\w8\w8\w8\s[209]\0You try to tell Hunter the word for food.\w8\w8\w8\w8\1\s[200]\0" //are they watching? we don't know /j //Slugsign is "Yay" later "Object" then "Food" then reset
+} 
+
+Lizcolour//many lizor
+{
+  "Green"
+  "Pink"
+  "Blue"
+  "White"
+  "Yellow"
+  "pack of Yellows"
+  "Mole"
+  "Salamander"
+  "Red"
+	"Cyan"
+  "Caramel"
+  "Eel"
+  "Strawberry??" //three question marks because funny saint timeline lizor //Lol yes
+	//"Black"//that's a mole lizard //did not know that //LOL that's ok 
+  "...actually, what is that?" //pft //train perhaps //XD
+}

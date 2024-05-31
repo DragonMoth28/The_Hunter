@@ -1,0 +1,17 @@
+charset,UTF-8
+
+name,The Hunter
+type,ghost
+
+shiori,yaya.dll
+
+craftman,Softie, Digi
+craftmanw,
+craftmanurl,
+
+sakura.name,The Hunter
+kero.name,The Pup
+
+icon,hunter.ico
+
+sstp.allowunspecifiedsend,0

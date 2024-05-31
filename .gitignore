@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+ghost/master/profile/ghost.dat
+ghost/master/profile/ghost.dat.bak
+ghost/master/yaya_variable.cfg
+shell/master/profile/shell.dat.bak
+shell/master/profile/shell.dat
+shell/master/examplemark.txt

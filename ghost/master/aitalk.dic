@@ -1,0 +1,114 @@
+OnAiTalk
+{
+	if CHAIN.IDName == ""
+	{
+		LastTalk = RandomTalk
+	}
+	else
+	{
+		LastTalk = ChainTalk
+	}
+	LastTalk
+}
+
+RandomTalk : nonoverlap_pool
+{
+	"\s[1]The red slugcat looks down at you with a brief smile in their eyes, a glimmer of patience. You wish you could talk to them normally..."
+	"There's the clicking of a lizard in the distance... a %(Lizcolour)?"
+	"\s[0]You stare up at Hunter, \1\s[233]\0hopping a bit.\w8\w8\w8\w8\w8\w8\1\s[200]\0\s[4] They look down at you in confusion."
+	"You're a bit hungry... \s[0]\1\s[223]\w8\w8\w8\s[207]\w8\w8\w8\s[209]\w8\w8\w8\s[200]\0 so you try to communicate this the only way you know how. \s[4]\nIt doesn't quite seem to come across." //did i do that right //Slugsign is "Grab" "Give" "Food" then reset
+	"You look up at a blue fruit hanging from the ceiling, and hop up to try to grab it. %(attemptget)" //aww
+		if HaveSpear == 0
+		{
+			"\s[0]Hunter randomly picks up a spear off the ground."
+			"\s[0]You walk over to Hunter and offer the spear you grabbed to them. They seem to nonchalantly take it from you"
+			"\s[0]The other slugcat grabs a spear from the wall and puts it on their back."
+			--
+			"\![bind,Items,Spear,1]"
+    		--
+			HaveSpear = 1
+		}
+		elseif HaveSpear == 1
+		{
+			"Hunter throws a spear at the Wall to climb it."
+			"You watch the Slugcat do a flip, driving their spear into the ground."
+			--
+			"\![bind,Items,Spear,0]"
+    		--
+			HaveSpear = 0
+		}
+	"\0\s[0]\1\s[219]\0You try to get their attention, \1\s[200]\0and they look over, \1\s[201]\w8\w8\w8\s[226]\w8\w8\w8\s[238]\w8\w8\w8\s[200]\0as you try to ask them a question. \s[2]They seem to intently stare at you, trying to decypher your question, but... no luck." //Slugsign question is "Question, You, Fast?"
+  	"You think about your colony. Hunter looks over, visibly worried and upset that you look upset. They go over to you and crouch down a bit, before bumping their forehead on your own, as a brief sign of affection."
+  	"Hunter suddenly turns around, as they pull a grey pearl from their tail bag as they hop briefly. You recognise that motion! \s[1]Play time! You run around excitedly as the red slugcat throws the pearl, and you grab the object, bringing it back to them. This goes on for a few minutes \s[0]until Hunter tells you that they've had enough."
+    //SHDUHGRH PLAY TIME /POSITIVE //YEEEEAAHHH
+    "You wonder if, after everything, you could take Hunter to your colony."
+	"The buzzing of a squidcada's wings brings you to remember the kinds of food you've tasted and what your colony has made."
+	"Farm Arrays! \1\s[222]\0You sign the word for Rain Deer, \w8\w8\w8\w8\w8\w8\w8\1\s[10]\0but then remember it could be used for other things too..."
+    "For a moment, you think you saw tendrils come from Hunter's back, but when you blink, there they go... You're left rather confused."
+    "Garbage Wastes! Usually spears that are brought here are taken by the Garbage Worms, but... it doesn't seem like it's happening with Hunter...?"
+	"\1\s[219]\w8\w8\w8\w8\s[233]\w8\w8\w8\w8\w8\s[208]\0You briefly hop up and ask for Hunter to carry you.\1\w8\8\8\8\s[10]\0\s[4] They look rather confused, but then you tug on their hand. Through other means, they understand, \s[1]as they pick you up and put you on their back."
+    "You stop briefly to stare at a bug, \1\s[229]\0and make the motion for bug for Hunter to learn.\w8\w8\w8\w8\w8\1\s[10]\0"
+    "Sky Islands! You look down at the daunting pit below and get away from the ledge, \s[2]climbing onto Hunter as they hold on to you tight. Oh, and the vultures are a threat too."
+    "You briefly remember the air being thick and hard to breathe and seeing a large noodle-y creature floating in the sky..." //echo funny
+    "Five Pebbles! Or... The Superstrucutre? When you have the chance and after you leave the puppet chamber, \1\s[205]\0you sign for Five Pebbles, \1\w8\w8\w8\w8\w8\w8\w8\s[10]\0but then pause. \w8\w8\w8\w8\w8\1\s[204]\0Predator \w8\w8\w8\1\s[228]\0Kill \w8\w8\w8\1\s[205]\0Five Pebbles \w8\w8\w8\w8\w8\w8\1\s[238]\0Fast, \w8\w8\w8\w8\1\s[205]\w8\w8\w8\w8\w8\w8\w8\s[232]\0and then call Pebbles a Loser... \w8\w8\w8\w8\1\s[233]\0You giggle to yourself.\w8\w8\w8\w8\w8\1\s[10]\0"
+    "Subterrainian! There were more lizards here than you last remembered. You get spooked by a Stowaway launching its tendrils at you, but you were quick enough to get away."
+    "Shoreline! You remember Looks To The Moon and the last time you saw her. She was in a much better condition than this... \e:chain=ChainMoon"
+    "Outskirts! You can see Pole Plants trying to hide (very poorly) and Noodleflies fly around with their babies."
+    "The Wall. The wind whips around you as you and Hunter take a moment to look at the sights, the breathtaking scene before you."
+    "Drainage System. You hold your breath as Hunter plunges into the cold water below..."
+    "Shaded Citadel. Spiders. Spiders everywhere. Though, for some reason, Hunter glows with a strange light, warding most of the spiders away. You even get to eat one or two, which was a strange texture."
+	"\0\s[2]Hunter looks up at a blue cluster on the ceiling with a brief shiver, as they pull on you to keep moving..."
+	"There seemed to be a distant noise, almost like a squelch. You try to ask Hunter a question,\1\s[201]\w8\w8\w8\0\s[2] was it a predator?\w8\w8\w8\1\s[204]\w8\w8\w8\1\s[200]\0"
+	"\0\s[2]Hunter seems to take a seat on the ground to catch their breath for a moment."
+}
+
+OnNeedlePoke
+{
+	//needlespear interaction only, otherwise ignore
+  if reference1 == "Spear"
+  	{
+    if HaveSpear == 1
+ 	   {
+  		"Hunter, on sheer accident, throws the spear right above your head. \0\s[2]You squint at the slugcat as they mentally panic."
+  	  	"You waddle over to the other slugcat and randomly take the spear from them. They don't seem to care enough to grab it back from you."
+  	  	"\0\s[3]Turning around suddenly, Hunter throws the spear into the mouth of a lizard as it had tried to sneak up on them. \1\s[204]\0You try to tell Hunter the word for predators.\w8\w8\w8\w8\w8\w8\1\s[200]\0"
+  	    --
+		"\![bind,Items,Spear,0]" 
+		--
+  		HaveSpear = 0 
+     }
+     
+     elseif HaveSpear == 0
+     {
+    	"\0\s[0]You hold out a spear for Hunter to take, \s[1]as they take it from you happily."
+		"They pick up a spear from a group that was on the ground, inspecting it briefly, before putting it onto their back."
+		"Hunter readily picks up a spear packed with some explosive red cloth off the ground."
+		"Ooh, that spear looks strange, you think, as you pick it up and hand it to Hunter. They run their finger along its segmented cone-shaped end."
+    	--
+		"\![bind,Items,Spear,1]"
+		--
+		HaveSpear = 1
+     }
+	}
+  else
+  {
+	"Hunter gives you a piece of rubbish to hold."
+	"Hunter gives you a piece of rubbish to hold... you throw it at the nearest thing you see."
+	"You pick up a rock and, while Hunter's back is turned, throw it at the slugcat... \s[3]and they fall on their face. They look back over at you with a scowl."
+	"You randomly pick up a rock and hold it up to your face."
+	"You trip over a piece of rubble on the ground."
+  }
+}
+
+ChainMoon
+{{CHAIN
+"As you move towards Moon's Chamber, you see her laying on the ground, unresponsive.\e"
+
+"Hunter pulls out a Green Neuron from their tailbag. When they step foot into the chamber, they throw the Neuron, and it floats over\e"
+
+"The Neuron pops a few times, and more Neurons float up. Moon eventually gets up.\s[1]\e"
+
+"\1\s[219]\0You get Hunter's attention \w8\w8\w8\w8\w8\1\s[210]\0and sign for Looks To The Moon, \w8\w8\w8\w8\8\w8\1\s[10]\0before they pay attention to Moon, giving her the pearl that was also in Hunter's tailbag.\e"
+
+"Eventually, Moon gives Hunter the pearl back.\e:chain=end"
+}}CHAIN

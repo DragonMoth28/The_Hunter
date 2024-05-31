@@ -1,0 +1,54 @@
+OnFirstBoot : all
+{
+
+	stroke = 0
+  HaveSpear = 1
+  HaveTailBag = 1
+  LastTalk = ""
+	nowshell = "Hunter"
+	"\t\0\s[-1]"
+  
+	"You sit in the shelter alone and cold. You got lost during a trip with your colony, they ran into a group of scavengers and you had to flee.\x[noclear]\n\n"
+  
+	"There's something coming, you hope it's not a scavenger. Slugcats raised by scavs always turn out weird. \nIt's... red...?\x[noclear]\n\n"
+  //OH NO D:
+	"A slugcat! \1\s[227]\0You jump up and down, \w8\w8\w8\1\s[208]\w8\w8\w8\w8\w8\s[218]\0and ask them to take you back to your home region.\1\s[200]\x[noclear]\n\n" //peace/spare //"Carry Me" "Region Left"
+
+	"\0\s[4]\![bind,Items,Spear,1]\![bind,Items,Tailpack,1]...But they only look at you with confusion. What's that mark on their forehead? And what's that strange stuff on their tail?\x[noclear]\n"
+
+	"\1\s[201]\w8\w8\w8\w8\s[226]\w8\w8\w8\w8\s[218]\w8\w8\w8\w8\w8\w8\s[200]\0You try to ask them about themself, but they don't respond. ...Do they not know Slugsign? You try again.\1\s[201]\w8\w8\w8\w8\s[226]\w8\w8\w8\w8\s[218]\w8\w8\w8\w8\w8\w8\s[200]\0\x[noclear]\n\n" //you //Now "Question" "You" "Region Left" twice
+
+	"No decernable responce, they only tilt their head.\x[noclear]\n\n"
+
+	"Oh no. They don't know Slugsign. You're stuck with a slugcat that doesn't know Slugsign!" //"AAAAAAAA"
+  //better than being alone in the wild //YUP lmao
+  
+  //"...you know what, it's better than being alone, so there's that."
+}
+
+OnInitialize
+{
+	if reference0 != "reload" 
+	{
+		LastTalk = ""
+	}
+}
+
+OnBoot
+{
+	"\1\s[10]\0\s[0]"
+	--
+	"The rain seems to stop coming down as the massive shelter creaks open... \1\s[200]\s[233]\0\s[1]another cycle awaits!\w8\w8\w8\w8\w8\w8\1\s[200]\0"
+ 	"The shelter's jaws creak open prematurely as the rain continues to come down outside. \0\s[2]Oh no.\n\nHunter looks over at you, concerned, as the two of you sit at the entrance of the shelter for a moment in silence, waiting for the rain to stop...\n\n\w8\0\s[0]Eventually, it does." //Oh shit oh fuck
+	"Hunter seems to wake you up as the shelter has already opened and the rain has already ended, as you blink at them tiredly. You've overslept. Time to go!"
+}
+
+///////rain time
+OnClose
+{
+	"The ground shakes and the air rumbles... uh oh, time to scoot! Hunter grabs you by the paw and runs to the nearest shelter, as the rain comes hurling down behind you and the shelter doors' jaws slowly close..."
+  "Hunter decides to call it a cycle early as they gently take your paw and go to the shelter."
+  "You pause. Something's wrong, \1\s[236]\0as you sign the word for Rain, \w8\w8\w8\w8\w8\1\s[200]\0and while Hunter doesn't understand what you're saying, they figure it out fairly quickly as the sky darkens and you both get to a shelter to end the cycle..."
+	--
+	"\1\s[214]\0You try to tell the Hunter the word for shelter.\w8\w8\w8\w8\-"
+}
