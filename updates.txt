@@ -1,7 +1,7 @@
 charset,OSNative
 file,ghost/master/aitalk.dicc30ebf65613305e7257fd44bb67206cbsize=7844date=2024-05-30T19:01:29
 file,ghost/master/boot.dic2fb20b8a2c4fb750be78cc126176cfb0size=2912date=2024-05-30T18:28:17
-file,ghost/master/descript.txt2da68e321f57b1bf1480cf1bfd40dd51size=209date=2024-05-30T18:46:23
+file,ghost/master/descript.txt5c25f449bf892e66217d9d82940a94d6size=266date=2024-05-30T19:34:49
 file,ghost/master/emerg.dic992775115c2bb922a2796b7395fb9afesize=393date=2024-05-30T13:40:56
 file,ghost/master/hunter.icod4840f5556619fe00fdde6f6c3c52b3dsize=2462date=2024-05-30T18:45:25
 file,ghost/master/kero_menu.dic0062f3d950856e6c1e78ffc0ce689433size=1304date=2024-05-30T13:48:59
@@ -19,7 +19,7 @@ file,ghost/master/yaya_base/optional.dicff4da728a656a8aa6a38939e654c51f2size=9
 file,ghost/master/yaya_base/shiori3.dicac4750d7081a6607ac1c26184677020asize=55020date=2024-02-04T01:16:24
 file,ghost/master/yaya_emerg.txt9e43b4696366a536ecc69e45d80e392csize=607date=2023-04-14T14:44:19
 file,install.txt2dfa33b549d98523d4b32443cb6fa67asize=66date=2024-05-30T13:49:48
-file,readme.txtc3819cbd9c65b4a3b33b27e0d5c1a32bsize=567date=2024-05-30T19:26:48
+file,readme.txta3db4a3b86e2ce2057c5708ff309b7a3size=548date=2024-05-30T19:28:42
 file,shell/master/descript.txt9b8e1d79b67eee7dd0ce328edef64831size=304date=2024-05-30T18:37:24
 file,shell/master/examplemark.txt9c14053a67269a5e027c5aebc1ecbf12size=1093date=2024-05-25T11:58:24
 file,shell/master/master.rar94ab228c907dc47a03435cc2c732b80bsize=125631date=2024-05-26T12:21:35
