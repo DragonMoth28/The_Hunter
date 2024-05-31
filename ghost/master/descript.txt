@@ -7,7 +7,7 @@ shiori,yaya.dll
 
 craftman,Softie, Digi
 craftmanw,
-craftmanurl,
+craftmanurl,https://raw.githubusercontent.com/DragonMoth28/The_Hunter
 
 sakura.name,The Hunter
 kero.name,The Pup
